@@ -8,9 +8,6 @@ class App extends Component {
   render(){
     return (
       <div className="App">
-        <h1>This is awesome TINDER Clone App</h1>
-
-        {/* Header */}
         <Header />
 
         {/* Tinder Cards */}

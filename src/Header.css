@@ -1,0 +1,18 @@
+.header {
+    /* display to row */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #f9f9f9;
+}
+
+.header__logo {
+    height: 40px;
+    
+    /*내용이 종횡비를 유지하면서 요소에 정의된 너비와 높이안에서 가능한한 많이 확대(scale up)시킨다*/
+    object-fit: contain;
+}
+
+.header__icon {
+    margin: 20px;
+}
