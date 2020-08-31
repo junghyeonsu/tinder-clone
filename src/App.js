@@ -4,7 +4,6 @@ import TinderCards from './TinderCards';
 import { BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 import './App.css';
 import { firestore } from "./firebase";
-import { Button } from 'react-bootstrap';
 
 class App extends Component {
   render(){
