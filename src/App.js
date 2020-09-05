@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Header from './Header';
 import TinderCards from './TinderCards';
+import SwipeButtons from './SwipeButtons';
 import { BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 import './App.css';
 import { firestore } from "./firebase";
@@ -17,6 +18,7 @@ class App extends Component {
             </Route>
             <Route path="/">
               <TinderCards />
+              <SwipeButtons />
             </Route>
           </Switch>
           {/* Tinder Cards */}
