@@ -10,11 +10,11 @@ class App extends Component {
   render(){
     return (
       <div className="App">
-        <Header />
         <Router>
+        <Header />
           <Switch>
             <Route path="/chat">
-              <h1>I am the Chatpage</h1>
+              <h1>I am the Chat page</h1>
             </Route>
             <Route path="/">
               <TinderCards />

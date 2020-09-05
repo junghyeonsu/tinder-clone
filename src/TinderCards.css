@@ -1,9 +1,9 @@
 .card {
     position: relative;
     width: 600px;
-    padding: 20px;
+    padding: 10px;
     max-width: 85vw;
-    height: 50vh;
+    height: 55vh;
     border-radius: 20px;
     background-size: cover;
     background-position: center;
