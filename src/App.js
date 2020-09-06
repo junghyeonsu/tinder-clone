@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Header from './Header';
 import TinderCards from './TinderCards';
 import SwipeButtons from './SwipeButtons';
+import Chats from './Chats';
 import { BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 import './App.css';
 import { firestore } from "./firebase";
@@ -11,12 +12,13 @@ class App extends Component {
     return (
       <div className="App">
         <Router>
-        <Header />
           <Switch>
             <Route path="/chat">
-              <h1>I am the Chat page</h1>
+              <Header backButton="/" />
+              <Chats />
             </Route>
-            <Route path="/">
+            <Route path="/">  
+              <Header />
               <TinderCards />
               <SwipeButtons />
             </Route>
