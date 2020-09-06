@@ -3,6 +3,7 @@ import Header from './Header';
 import TinderCards from './TinderCards';
 import SwipeButtons from './SwipeButtons';
 import Chats from './Chats';
+import ChatScreen from './ChatScreen';
 import { BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 import './App.css';
 import { firestore } from "./firebase";
@@ -13,6 +14,10 @@ class App extends Component {
       <div className="App">
         <Router>
           <Switch>
+            <Route path="/chat/:person">
+              <Header backButton="/chat" />
+              <ChatScreen />
+            </Route>
             <Route path="/chat">
               <Header backButton="/" />
               <Chats />
@@ -23,12 +28,6 @@ class App extends Component {
               <SwipeButtons />
             </Route>
           </Switch>
-          {/* Tinder Cards */}
-          {/* Buttons belos tinder cards */}
-
-          {/* Chats screen */}
-          {/* Individual Chat screen */}
-
         </Router>
       </div>
     );
